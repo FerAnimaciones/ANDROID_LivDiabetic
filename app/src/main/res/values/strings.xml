@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">LivDiabetic</string>
+    <string-array name="nacionalidad">
+        <item>Mexico</item>
+        <item>Argentina</item>
+        <item>Chile</item>
+        <item>Ecuador</item>
+        <item>Brazil</item>
+        <item>Bolivia</item>
+    </string-array>
 </resources>
