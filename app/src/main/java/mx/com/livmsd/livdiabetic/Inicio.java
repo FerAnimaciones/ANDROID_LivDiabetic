@@ -16,7 +16,7 @@ import java.util.Random;
 public class Inicio extends AppCompatActivity {
     private final Handler mHandler = new Handler();
     private Runnable mTimer;
-    private double graphLastXValue = 5d;
+    private double graphLastXValue = 0d;
     private LineGraphSeries<DataPoint> mSeries;
     Button medicinas;
     @Override
@@ -68,7 +68,7 @@ public class Inicio extends AppCompatActivity {
             public void run() {
                 graphLastXValue += 0.25d;
                 mSeries.appendData(new DataPoint(graphLastXValue, getRandom()), true, 22);
-                mHandler.postDelayed(this, 330);
+                mHandler.postDelayed(this, 200);
             }
         };
         mHandler.postDelayed(mTimer, 1500);

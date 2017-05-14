@@ -19,23 +19,18 @@ public class Medicina {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String titulo) {
         this.nombre = titulo;
     }
-
-    public void setCantidad(String peso) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
-
     public String getCantidad() {
         return cantidad;
     }
@@ -43,13 +38,12 @@ public class Medicina {
     public String getImagen() {
         return imagen;
     }
-
     public void setImagen(String imagen) {
         this.imagen = imagen;
     }
     @Override
     public String toString() {
-        return "mx.com.livmsd.livdiabetic.MedicinaAdaptador.Medicina [id=" + id + ", nombre=" + nombre + ",cantidad="+cantidad+",imagen=" + imagen + "]";
+        return "mx.com.livmsd.livdiabetic.MedicinaAdaptador.Medicina[id=" + id + ", nombre=" + nombre + ",cantidad="+cantidad+",imagen=" + imagen + "]";
     }
 
 }

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="horizontal"
     android:weightSum="1">
 
     <ImageView
         android:id="@+id/imgFoto"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_weight="16"
+        android:layout_width="103dp"
+        android:layout_height="match_parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
@@ -22,44 +21,73 @@
         android:visibility="gone" />
 
     <LinearLayout
-        android:layout_width="194dp"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/NombreMedi"
-            android:layout_width="218dp"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/NombreMedi"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05"
-                android:text="Cantidad:" />
+                android:layout_height="64dp"
+                android:text="TextView"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/Cantidad"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Cantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textStyle="italic" />
+            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/BTUTILIZAR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.10"
-        android:text="UTILIZAR" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:elevation="9dp"
+            app:srcCompat="@drawable/ic_exposure_neg_1_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:adjustViewBounds="false"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:elevation="7dp"
+            app:srcCompat="@drawable/ic_add_shopping_cart_black_24dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

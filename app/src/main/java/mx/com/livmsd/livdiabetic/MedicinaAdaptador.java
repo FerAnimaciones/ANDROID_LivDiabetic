@@ -49,7 +49,7 @@ public class MedicinaAdaptador extends BaseAdapter{
         TextView nombre = (TextView) vista.findViewById(R.id.NombreMedi);
         nombre.setText(elemento.getNombre());
         TextView id = (TextView) vista.findViewById(R.id.idMedi);
-        id.setText(elemento.getId());
+        id.setText(""+elemento.getId());
         TextView cantidad = (TextView) vista.findViewById(R.id.Cantidad);
         cantidad.setText(elemento.getCantidad());
         ImageView image = (ImageView) vista.findViewById(R.id.imgFoto);
