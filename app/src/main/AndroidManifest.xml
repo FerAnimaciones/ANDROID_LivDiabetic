@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainLiv"></activity>
+        <activity android:name=".MainLiv" />
+        <activity android:name=".Inicio" />
+        <activity android:name=".Reportecontrol" />
+        <activity android:name=".Medicinas"></activity>
     </application>
 
 </manifest>
